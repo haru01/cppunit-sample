@@ -7,3 +7,4 @@ build:
 runtest:
 	bin/test
 
+all: clean build runtest
