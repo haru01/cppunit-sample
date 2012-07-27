@@ -7,4 +7,21 @@
 
 ## run
 
-    make clean build runtest
+    make all
+
+## if use guard
+
+### install
+
+    gem install guard-shell
+
+### useage
+
+    guard
+
+file save -> auto test
+
+### see
+
+- https://github.com/guard/guard/
+- https://github.com/guard/guard-shell
