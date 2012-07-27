@@ -1,0 +1,11 @@
+## What
+  cppunit sample code
+
+## install
+
+    brew install cppunit
+
+## run
+
+    g++ **.cc -lcppunit -o test
+    ./test
