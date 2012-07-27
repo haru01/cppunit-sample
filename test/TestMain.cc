@@ -13,5 +13,4 @@ int main() {
 
   runner.setOutputter(outputter);
   return runner.run() ? 0 : 1;
-
 }
