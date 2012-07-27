@@ -7,5 +7,4 @@
 
 ## run
 
-    g++ **.cc -lcppunit -o test
-    ./test
+    make clean build runtest

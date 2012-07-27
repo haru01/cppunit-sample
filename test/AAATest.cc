@@ -1,5 +1,3 @@
-// ex. #include "XXX.h"
-
 #include <cppunit/extensions/HelperMacros.h>
 #include <cppunit/TestAssert.h>
 
