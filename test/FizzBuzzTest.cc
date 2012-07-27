@@ -9,7 +9,7 @@
 class FizzBuzzTest : public CppUnit::TestFixture {
 
   CPPUNIT_TEST_SUITE(FizzBuzzTest);
-  CPPUNIT_TEST(test_WhenNot3or5multipleThenReturnNum);
+  CPPUNIT_TEST(test_CallfizzbuzzWith3_5multipleParamThenReturnNum);
   CPPUNIT_TEST_SUITE_END();
 
 private:
@@ -29,11 +29,11 @@ public:
   virtual void tearDown() {
   }
 
-  void test_WhenNot3or5multipleThenReturnNum() {
+  void test_CallfizzbuzzWith3_5multipleParamThenReturnNum() {
     FizzBuzz fizzBuzz;
     std::string expected("1");
     CPPUNIT_ASSERT_EQUAL( expected, fizzBuzz.fizzbuzz(1) );
   }
 };
 
-CPPUNIT_TEST_SUITE_REGISTRATION(FizzBuzzTest); // [10]
+CPPUNIT_TEST_SUITE_REGISTRATION(FizzBuzzTest);
