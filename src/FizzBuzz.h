@@ -1,17 +1,16 @@
 #ifndef FIZZBUZZ_H
 #define FIZZBUZZ_H
-
 #include <string>
-/**
- @author
-*/
-class FizzBuzz
-{
-  public:
-    FizzBuzz();
-    ~FizzBuzz();
 
-    std::string fizzbuzz(int num);
+class FizzBuzz {
+private:
+  int num;
+
+public:
+  FizzBuzz(int num);
+  ~FizzBuzz();
+
+  std::string value();
 
 };
 

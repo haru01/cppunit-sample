@@ -3,18 +3,28 @@
 #include <sstream>
 using namespace std;
 
-FizzBuzz::FizzBuzz()
-{
+FizzBuzz::FizzBuzz(int num) {
+  this->num = num;
 }
 
 
-FizzBuzz::~FizzBuzz()
-{
+FizzBuzz::~FizzBuzz() {
 }
 
-string FizzBuzz::fizzbuzz(int num)
-{
+string FizzBuzz::value() {
+  if(this->num % 15 == 0) {
+    return "FizzBuzz";
+  }
+
+  if(this->num % 3 == 0) {
+    return "Fizz";
+  }
+
+  if(this->num % 5 == 0) {
+    return "Buzz";
+  }
+
   stringstream result;
-  result << num;
+  result << this->num;
   return result.str();
 }

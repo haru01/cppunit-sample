@@ -9,7 +9,10 @@
 class FizzBuzzTest : public CppUnit::TestFixture {
 
   CPPUNIT_TEST_SUITE(FizzBuzzTest);
-  CPPUNIT_TEST(test_CallfizzbuzzWith3_5multipleParamThenReturnNum);
+  CPPUNIT_TEST(test_ReturnNumWhenfizzbuzzWithNot3multipleAndNot5nultiple);
+  CPPUNIT_TEST(test_ReturnFizzWhenfizzbuzzWith3multiple);
+  CPPUNIT_TEST(test_ReturnBuzzWhenfizzbuzzWith5multiple);
+  CPPUNIT_TEST(test_ReturnFizzBuzzWhenfizzbuzzWith15multiple);
   CPPUNIT_TEST_SUITE_END();
 
 private:
@@ -29,11 +32,30 @@ public:
   virtual void tearDown() {
   }
 
-  void test_CallfizzbuzzWith3_5multipleParamThenReturnNum() {
-    FizzBuzz fizzBuzz;
+  void test_ReturnNumWhenfizzbuzzWithNot3multipleAndNot5nultiple() {
+    FizzBuzz fizzBuzz(1);
     std::string expected("1");
-    CPPUNIT_ASSERT_EQUAL( expected, fizzBuzz.fizzbuzz(1) );
+    CPPUNIT_ASSERT_EQUAL(expected, fizzBuzz.value());
   }
+
+  void test_ReturnFizzBuzzWhenfizzbuzzWith15multiple() {
+    FizzBuzz fizzBuzz(15);
+    std::string expected("FizzBuzz");
+    CPPUNIT_ASSERT_EQUAL(expected, fizzBuzz.value());
+  }
+
+  void test_ReturnFizzWhenfizzbuzzWith3multiple() {
+    FizzBuzz fizzBuzz(6);
+    std::string expected("Fizz");
+    CPPUNIT_ASSERT_EQUAL(expected, fizzBuzz.value());
+  }
+
+  void test_ReturnBuzzWhenfizzbuzzWith5multiple() {
+    FizzBuzz fizzBuzz(10);
+    std::string expected("Buzz");
+    CPPUNIT_ASSERT_EQUAL(expected, fizzBuzz.value());
+  }
+
 };
 
 CPPUNIT_TEST_SUITE_REGISTRATION(FizzBuzzTest);
