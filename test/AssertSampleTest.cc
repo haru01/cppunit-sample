@@ -1,8 +1,8 @@
 #include <cppunit/extensions/HelperMacros.h>
 #include <cppunit/TestAssert.h>
 
-class AAATest : public CppUnit::TestFixture {
-  CPPUNIT_TEST_SUITE(AAATest);
+class AssertSampleTest : public CppUnit::TestFixture {
+  CPPUNIT_TEST_SUITE(AssertSampleTest);
   CPPUNIT_TEST(test_one);
   CPPUNIT_TEST(test_two);
   CPPUNIT_TEST(test_three);
@@ -13,10 +13,10 @@ class AAATest : public CppUnit::TestFixture {
 
 private:
 public:
-  AAATest() {
+  AssertSampleTest() {
   }
 
-  ~AAATest() {
+  ~AssertSampleTest() {
 
   }
 
@@ -54,4 +54,4 @@ public:
 /*
  * register test suite
  */
-CPPUNIT_TEST_SUITE_REGISTRATION(AAATest);
+CPPUNIT_TEST_SUITE_REGISTRATION(AssertSampleTest);
